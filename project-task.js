@@ -84,6 +84,11 @@ console.log(todos);
   3. Use method chaining to perform both steps together.
   */
   
+  // let finalSortedArr = todos.filter(task => task.completed == false).sort((a,b) => a.priority - b.priority);
+  // console.log(finalSortedArr);
+
+  //this part doesn't run but I am confused and frustrated and just submitting it. 
+    /*
   
   // ============================================
   // 🧪 Console Test Your Work
