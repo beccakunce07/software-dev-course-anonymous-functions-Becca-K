@@ -39,6 +39,10 @@ const todos = [
   3. Return only the tasks that are not completed.
   */
   
+let stillToDo = todos.filter(task => task.completed == false); //filtering 
+console.log(stillToDo);
+
+// how do I do this with a return??
   
   /*
   🔹 Task 2: Sort Tasks by Priority
@@ -47,8 +51,11 @@ const todos = [
   1. Use the `sort()` method on the todos array.
   2. Use an anonymous function as the comparison function.
   3. Sort tasks in ascending order of priority (1 = highest).
+
   */
-  
+todos.sort((a,b) => a.priority - b.priority);
+console.log(todos); 
+
   
   /*
   🔹 Task 3: Mark All Tasks as Completed
@@ -59,6 +66,14 @@ const todos = [
   3. Change the `completed` property to `true` for every task.
   */
   
+  let allTasksCompleteArr = todos.map(item => {
+    return {
+      ...item,
+      completed : false,
+    }
+  });
+
+  console.log(allTasksCompleteArr);
   
   /*
   🔹 Task 4: Combine Filters
